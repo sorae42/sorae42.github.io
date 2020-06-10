@@ -1,5 +1,2 @@
-# skyventuree.github.com
-Base page for my GitHub Page.
-
 # Copyright
-Please do not copy/duplicate and make this repository as yours.
+All of the content in this website are prohibited from copying/duplicating for commercials/personal (with outcome) use. No license is used on this website.

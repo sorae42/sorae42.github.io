@@ -3,6 +3,8 @@ const capital = (s) => {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
+var quote; // global string as quote
+
 function loadFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
@@ -12,6 +14,13 @@ function loadFile(filePath) {
     result = xmlhttp.responseText;
   }
   return result;
+}
+
+window.onload = function () {
+    quote = loadFile("quote.txt").split("|");
+    for (i = 0; i < quote.length; i++) {
+        quote[i] = quote[i].replace(/\n/g, "");
+    }
 }
 
 function swtloreCheck() {
@@ -39,11 +48,8 @@ function nameAnalyze() {
 
 function premiseAnalyze() {
     var name = nameAnalyze();
-    const totalpremise = 24;
-    var rnd = Math.floor(Math.random() * totalpremise) + 1;
-    var file = "premise/" + rnd;
-    var premise = loadFile(file);
-    premise = premise.replace(/%a/g, name[0]);
+    var rnd = Math.floor(Math.random() * quote.length);
+    premise = quote[rnd].replace(/%a/g, name[0]);
     premise = premise.replace(/%b/g, name[1]);
     return premise;
 }

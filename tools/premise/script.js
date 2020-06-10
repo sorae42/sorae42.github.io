@@ -3,6 +3,11 @@ const capital = (s) => {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-149470791-3');
+  
 var quote; // global string as quote
 
 function loadFile(filePath) {

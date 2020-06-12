@@ -1,37 +1,77 @@
-body {
-                background-color: #ffc0cb;
-            } 
-#info {
+@media (prefers-color-scheme: light) {
+        body {
+                background-color: pink;
+                } 
+        #info {
                 font-size: 12px;
                 color: gray;
                 text-align: center;
+                }
+        #box {
+                border:1px solid #D6D6D6; 
+                padding:5%; 
+                background:#fff; 
+                margin-left:5%; 
+                width: 80%;
             }
-#box {
-                border:1px solid #D6D6D6; padding:5%; background:#fff; margin-left:5%; width: 80%;
-            }
-input[type="text"] {
+        input[type="text"] {
                 border: 0px;
                 border-bottom: 2px solid blue;
                 outline: none;
                 width: 40%;
             }
-input[type="checkbox"] {
-                background-color: white;
-                border: none;
-                outline: none;
-            }
-button {
+        button {
                 background: white;
                 border: 2px solid blue;
                 outline: none;
                 -webkit-transition-duration: 0.4s;
                 transition-duration: 0.4s;
             }
-button:hover {
+        button:hover {
                 background-color: blue;
                 color: white;
             }
-* {
-                font-family: Comfortaa;
-                font-size: 13px;
+        }
+        
+@media (prefers-color-scheme: dark) {
+        body {
+                background-color: purple;
+                } 
+        #info {
+                font-size: 12px;
+                color: white;
+                text-align: center;
+                }
+        #box {
+                border:1px solid #353535; 
+                padding:5%; 
+                background:#333; 
+                margin-left:5%; 
+                width: 80%;
+                color: white;
             }
+        input[type="text"] {
+                border: 0px;
+                border-bottom: 2px solid cyan;
+                outline: none;
+                width: 40%;
+                background-color: grey;
+            }
+        button {
+                background: #333;
+                border: 2px solid cyan;
+                outline: none;
+                color: white;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+            }
+        button:hover {
+                background-color: cyan;
+                color: #333;
+            }
+        }
+
+* {
+        font-family: Comfortaa;
+        font-size: 13px;
+        }

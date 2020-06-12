@@ -10,7 +10,7 @@ function findGetParameter(parameterName) {
 }
 
 window.onload = function () {
-document.getElementById("result").src = "https://ik.imagekit.io/p5cc/p5cc" + findGetParameter("view");
+document.getElementById("result").src = "https://ik.imagekit.io/p5cc/p5cc/" + findGetParameter("view");
 
 }
 

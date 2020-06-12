@@ -9,27 +9,8 @@ function findGetParameter(parameterName) {
     return result;
 }
 
-// https://stackoverflow.com/questions/16941104/remove-a-parameter-to-the-url-with-javascript
-function removeParam(key, sourceURL) {
-    var rtn = sourceURL.split("?")[0],
-        param,
-        params_arr = [],
-        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
-    if (queryString !== "") {
-        params_arr = queryString.split("&");
-        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
-            param = params_arr[i].split("=")[0];
-            if (param === key) {
-                params_arr.splice(i, 1);
-            }
-        }
-        rtn = rtn + "?" + params_arr.join("&");
-    }
-    return rtn;
-}
-
 window.onload = function () {
-document.getElementById("sharelink").value = removeParam("file_id", window.location);
+document.getElementById("sharelink").value = window.location;
 document.getElementById("result").src = "https://ik.imagekit.io/p5cc/p5cc/" + findGetParameter("view");
 
 }

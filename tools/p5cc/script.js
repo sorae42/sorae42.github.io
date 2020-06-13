@@ -45,3 +45,8 @@ function copyclipboard() {
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
 }
+
+function noimg() {
+    document.getElementById("imgNoExist").innerHTML = "No calling card was found.";
+    document.getElementById("elemHide").style.display = "none";
+}

@@ -14,15 +14,25 @@ document.getElementById("sharelink").value = window.location;
 document.getElementById("result").src = "https://ik.imagekit.io/p5cc/p5cc/" + findGetParameter("view");
 }
 
+function redirectPost(url, data) {
+    var form = document.createElement('form');
+    document.body.appendChild(form);
+    form.method = 'post';
+    form.action = url;
+    for (var name in data) {
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = data[name];
+        form.appendChild(input);
+    }
+    form.submit();
+}
+
 function deleteImage() {
     document.getElementById("deleteimg").innerHTML = "Please wait...";
-    var url = "https://rouxkarlus.pythonanywhere.com/p5cc/delete";
-    var params = "fileId=" + findGetParameter("file_id");
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send(params);
-    window.setTimeout(function() {window.location.href = "index.html";}, 3500)
+    var fid = findGetParameter("file_id");
+    redirectPost("https://rouxkarlus.pythonanywhere.com/p5cc/delete", { fileId : fid });
 }
 
 function copyclipboard() {

@@ -30,6 +30,10 @@ function redirectPost(url, data) {
 }
 
 function deleteImage() {
+    alert("We are currently having issue on deleting images on server side right now, so this feature is currently disabled.");
+}
+
+function TEMPdeleteImage() {
     document.getElementById("deleteimg").innerHTML = "Please wait...";
     var fid = findGetParameter("file_id");
     redirectPost("https://rouxkarlus.pythonanywhere.com/p5cc/delete", { fileId : fid });

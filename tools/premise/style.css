@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
+
+* {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
 @media (prefers-color-scheme: light) {
         body {
                 background-color: pink;
@@ -19,6 +25,7 @@
                 border-bottom: 2px solid blue;
                 outline: none;
                 width: 40%;
+                color: black;
             }
         button {
                 background: white;
@@ -31,7 +38,10 @@
                 background-color: blue;
                 color: white;
             }
+        a {
+            color: blue;
         }
+    }
         
 @media (prefers-color-scheme: dark) {
         body {
@@ -56,6 +66,7 @@
                 outline: none;
                 width: 40%;
                 background-color: grey;
+                color: white
             }
         button {
                 background: #333;
@@ -73,8 +84,3 @@
         a {
                 color: cyan;
                 }
-
-* {
-        font-family: Comfortaa;
-        font-size: 13px;
-        }

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
+
+* {
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.sliding-background {
+  background: url("assets/fog.png") repeat;
+  width: 6000px;
+  height: 100vh;
+  animation: slide 60s linear infinite;
+  position: fixed;
+}
+
+#helvetica {
+  height: 100px;
+  line-height: 50vh;
+  text-align: center;
+}
+
+#hel, #ve, #ti, #ca {
+  opacity: 0.1;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}

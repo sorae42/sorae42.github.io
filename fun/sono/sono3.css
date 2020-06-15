@@ -10,21 +10,66 @@ body {
   background-color: black;
 }
 
+#dynbg {
+  width: 100vw;
+  height: 100vh;
+  top: -10px;
+  left: -2px;
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+}
+
 .sliding-background {
   background: url("assets/fog.png") repeat;
   width: 6000px;
-  height: 100vh;
+  height: 120vh;
   animation: slide 60s linear infinite;
   position: fixed;
+  top: -100px;
+  left: -50px;
+}
+
+#start {
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; 
+  margin-left: -250px;
 }
 
 #helvetica {
   height: 100px;
   line-height: 50vh;
   text-align: center;
+  font-size: 24px;
 }
 
 #hel, #ve, #ti, #ca {
+  opacity: 0.1;
+}
+
+#dotty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+#particles-js {
+  position: fixed;
+  opacity: 0.8;
+  width: 120vw;
+  height: 120vh;
+}
+
+.dottyClass {
+  width: 20px;
+  height: 20px;
   opacity: 0.1;
 }
 

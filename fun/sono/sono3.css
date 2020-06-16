@@ -104,29 +104,13 @@ body {
 
 #welcome {
   position: fixed;
-  background-color: grey;
   z-index: 999; !important
   margin: 0 auto;
+  background-color: grey;
+  color: white;
+  opacity: .9;
 }
-
-
-@media (prefers-color-scheme: light) {
-    #welcome > body {
-        background-color: white;
-        color: black;
-    }
-    #welcome > a {
-        color: blue;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    #welcome > body {
-        background-color: black;
-        color: white;
-    }
-    
-    #welcome > a {
-        color: cyan;
-    }
+      
+#welcome > a {
+  color: cyan;
 }

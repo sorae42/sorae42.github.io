@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
 
 * {
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: 'Baloo Thambi 2';
     text-align: center;
     color: white;
 }
@@ -71,6 +71,24 @@ body {
   width: 20px;
   height: 20px;
   opacity: 0.1;
+}
+
+#loop {
+  color: white;
+  width: 48px;
+  height: 24px;
+  display: table;
+  margin: 0 auto;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.1;
+  transition: opacity 3s;
+  transition-delay: 1.5s;
+}
+
+#loop:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 @keyframes slide{

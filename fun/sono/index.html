@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>Visual Warning!</title>
+<link rel="stylesheet" type="text/css" href="sono3.css">
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="particles.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149470791-3"></script>
 <script>
@@ -15,14 +17,31 @@
 </script>
 </head>
 <body>
-<h1>Visual Warning!</h1>
-<p>This page is still in process of creating and optimizing so it's gonna not work well on some devices.</p>
-<p>Please proceed with caution.</p>
-<a href="helvetica_standard.html?homesweethome">Yes, I understand the consequence.</a>
-<br>
-<p>I noticed that some browser are having off-sync. This happens mostly on mobile devices, where the audio does not pre-load.</p>
+<div id="welcome">
+<p>This page is still in process of  optimizing so some elements won't work as intended.</p>
 <p>Music: Nichijou - Helvetica Standard - Sono 3</p>
 <p>The loop mode is not yet gapless and it's still in testing.</p>
+<span>Follow my stuff:</span>
 <a href="https://www.youtube.com/c/jdewfiez">YouTube</a> | 
 </body><a href="https://www.twitter.com/_skyventuree">Twitter</a>
+<br><p id="closeDialog">Click here to close this dialog.</p>
+</div>
+<div id="dynbg"></div>
+<div id="particles-js"></div>
+<div class="sliding-background"></div>
+<h3 id="start">Play</h3>
+<div id="helvetica">
+<span id="hel" class="hs">hel</span><span id="ve" class="hs">ve</span><span id="ti" class="hs">ti</span><span id="ca" class="hs">ca</span>
+<button id="loop">loop</button>
+<table id="dotty">
+<tr>
+  <td><img src="assets/dot.png" class="dottyClass" id="dotty0"></td>
+  <td><img src="assets/dot.png" class="dottyClass" id="dotty1"></td>
+  <td><img src="assets/dot.png" class="dottyClass" id="dotty2"></td>
+  <td><img src="assets/dot.png" class="dottyClass" id="dotty3"></td>
+</tr>
+</table>
+</div>
+</body>
+<script src="script.js"></script>
 </html>

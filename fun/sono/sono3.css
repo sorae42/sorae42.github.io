@@ -2,8 +2,10 @@
 
 * {
     font-family: 'Baloo Thambi 2';
-    text-align: center;
     color: white;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -98,4 +100,33 @@ body {
   100%{
     transform: translate3d(-1692px, 0, 0);
   }
+}
+
+#welcome {
+  position: fixed;
+  background-color: grey;
+  z-index: 999; !important
+  margin: 0 auto;
+}
+
+
+@media (prefers-color-scheme: light) {
+    #welcome > body {
+        background-color: white;
+        color: black;
+    }
+    #welcome > a {
+        color: blue;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #welcome > body {
+        background-color: black;
+        color: white;
+    }
+    
+    #welcome > a {
+        color: cyan;
+    }
 }

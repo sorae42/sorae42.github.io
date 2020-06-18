@@ -20,12 +20,14 @@
   <label for="message">So... What do you want to write on the calling card?</label><br>
   <textarea name="message" cols="50" rows="5" maxlength="100"></textarea>
   <br>
-  <input type="submit" value="Make a Calling Card!">
+  <input id="SubmitButton" type="submit" value="Make a Calling Card!" onclick="document.getElementById('SubmitButton').innerHTML='Please wait...'">
 </form>
-<br>
+<br>Processing Server is <span id="sv1"></span>
+<br><br>
 <a href="copyright.html">Copyright</a><br>
 <a href="https://www.twitter.com/_skyventuree">Twitter</a>
 </body>
+<script src="script.js"></script>
 </html>
 
 

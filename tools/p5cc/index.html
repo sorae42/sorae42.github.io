@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Persona 5 Calling Card Maker</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149470791-3"></script>
@@ -15,20 +16,25 @@
 </head>
 <body>
 <h2>Persona 5 Calling Card Maker</h2>
-<p>Welcome! This is one of my project I made for learning Python and Javascript and for the sake of making calling cards effortlessly. Apologies for bad web design, I'm not good at it...</p>
-<form action="https://rouxkarlus.pythonanywhere.com/p5cc" method="POST">
-  <label for="message">So... What do you want to write on the calling card?</label><br>
-  <textarea name="message" cols="50" rows="5" maxlength="100"></textarea>
+<p>For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
+<form onSubmit="sendServer()" id="requestcard" method="POST"
+  <label for="message">What do you want to write on the calling card?</label><br>
+  <textarea name="message" cols="45" rows="4" maxlength="150"></textarea>
   <br>
-  <input id="SubmitButton" type="submit" value="Make a Calling Card!" onclick="document.getElementById('SubmitButton').innerHTML='Please wait...'">
-</form>
-<br>Processing Server is <span id="sv1"></span>
-<br>
-<p>Tweet at me if you want to open another server. (Overload, Server offline, etc.)</p>
+  <input id="SubmitButton" type="submit" value="Request a Calling Card!">
+</form><br>
+<label for="cars">Select Server: </label>
+
+<select name="server" id="server">
+  <option value="0">rouxkarlus.pythonanywhere.com</option>
+  <option value="1">p5cc.pythonanywhere.com</option>
+</select><br><br>
+<a href="status.html">Server Status</a><br>
 <a href="copyright.html">Copyright</a><br>
 <a href="https://www.twitter.com/_skyventuree">Twitter</a>
+<br><br><p>v.2.0.rewritten</p>
 </body>
-<script src="script.js"></script>
+<script src="script/index.js"></script>
 </html>
 
 

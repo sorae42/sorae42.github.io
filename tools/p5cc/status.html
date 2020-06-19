@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<title>Your calling card has been arrived!</title>
+<title>Persona 5 Calling Card Maker</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -11,20 +11,33 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-149470791-3');
 </script>
 </head>
 <body>
-  <h2 id="arrivedMsg">Your calling card has been arrived!</h2>
-  <p id="imgNoExist" style="color:red"></p>
-  <div id="elemHide">
-  <img id="result" onerror="noimg()"><br>
-  Share this card: <input id="sharelink"><button onclick="copyclipboard()" id="copybutton">Copy</button>
-  <br>
-  </div>
-  <a href="index.html">New calling card</a><br>
-  <a href="copyright.html">Copyright</a>
+<h2>Server status</h2>
+<table>
+<tr>
+  <th>Server</th>
+  <th>Status</th>
+  <th>Version</th>
+</tr>
+<tr>
+  <td>rouxkarlus.pythonanywhere.com</td>
+  <td id="sv1"></td>
+  <td>1.3</td>
+</tr>
+<tr>
+  <td>p5cc.pythonanywhere.com</td>
+  <td id="sv2"></td>
+  <td>1.3</td>
+</tr>
+</table>
+<br>
+<p>Mention me on Twitter if you want more server for the calling card maker.</p>
+<br>
+<a href="https://www.twitter.com/_skyventuree">Twitter</a><br>
+<a href="index.html">Back to P5CC</a>
 </body>
-<script src="script/result.js"></script>
+<script src="script/status.js"></script>
 </html>

@@ -5,6 +5,6 @@ function noimg() {
     $("#elemHide").css('display', 'none');
 }
 window.onload = function () {
-    $("#sharelink").html(window.location),
+    $("#sharelink").val(window.location),
     $("#result").attr('src', "https://ik.imagekit.io/p5cc/p5cc/" + findParam("view"));
 };

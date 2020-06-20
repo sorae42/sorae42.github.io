@@ -8,3 +8,9 @@ window.onload = function () {
     $("#sharelink").val(window.location),
     $("#result").attr('src', "https://ik.imagekit.io/p5cc/p5cc/" + findParam("view"));
 };
+function copyCB() {
+    $('#copybtn').on("click", function(){
+          $('#sharelink').select();
+          document.execCommand("copy");
+    })
+}

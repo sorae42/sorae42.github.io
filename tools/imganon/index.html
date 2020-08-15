@@ -20,22 +20,19 @@
 <h2>ImgAnon</h2><p>Anonymous & Temporary Solution to Image Upload.</p>
 <hr>
 <br>
-<form action="https://rouxkarlus.pythonanywhere.com/imganon/submit" method="POST" id="sform" enctype 
+<form action="https://rouxkarlus.pythonanywhere.com/imganon/upload" method="POST" id="sform" enctype 
 ="multipart/form-data">
   <label for="img">Select image to upload:</label>
   <input type="file" id="img" name="img" accept="image/*" required><br>
   <textarea name="status" cols=50 rows=5 placeholder="What do you think about this image?"></textarea>
   <br><input type="checkbox" id="protected" name="protected" onclick="toggleBox()"><label for="protected">Password Protected</label>
   <input type="password" id="password" name="password" placeholder="Password to protect..." style="display:none">
-  <br><input type="submit" value="Upload!">
+  <br><input type="submit" value="Upload!" onclick="prevent()"><span id="txtw"></span>
 </form>
 <br><hr>
 <p>If someone sent you a Share ID, you can paste it here.
-<form action="https://rouxkarlus.pythonanywhere.com/imganon/view" method="POST" id="sform" enctype 
-="multipart/form-data">
 <label for="shareid">Share ID: </label><input type="text" name="shareid" id="shareid" placeholder="j8bIo0">
-<input type="submit" value="View Image">
-</form>
+<button type="submit" onclick="viewimg()">View Image</button>
 <p>You will be asked for password if available.</p>
 <hr>
 <div class="faq_container">

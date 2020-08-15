@@ -6,3 +6,11 @@ function() {$('.faq_question').click(function() {if ($(this).parent().is('.open'
 $('#protected').click(function() {
     $("#password").toggle(this.checked);
 });
+
+function prevent() {
+    $('#txtw').text('Please wait!...');
+}
+
+function viewimg() {
+    window.location.replace($("https://rouxkarlus.pythonanywhere.com/imganon/view/" + $('#shareid').val())
+}

@@ -13,6 +13,13 @@
 
   gtag('config', 'UA-149470791-3');
 </script>
+<script>
+    var url = window.location.pathname;
+    if url.includes("imganon/view/") {
+      res = url.split("imganon/view/")[1];
+      window.location.href = "https://rouxkarlus.pythonanywhere.com/imganon/view/" + res;
+      }
+</script>
 </head>
 <body>
 <p>Enjoy your stay.</p>

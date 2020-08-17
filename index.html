@@ -15,8 +15,8 @@
 </script>
 <script>
     var url = window.location.pathname;
-    if url.includes("imganon/view/") {
-      res = url.split("imganon/view/")[1];
+    if url.includes("?view=") {
+      res = url.split("?view=")[1];
       window.location.href = "https://rouxkarlus.pythonanywhere.com/imganon/view/" + res;
       }
 </script>

@@ -7,3 +7,4 @@
 /tools/p5cc/script/script-old.js
 *.py
 *.pyc
+/fun/game_test/*

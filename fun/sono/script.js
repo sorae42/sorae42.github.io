@@ -73,10 +73,10 @@ clickEvent = null !== document.ontouchstart ? "click" : "touchstart", $(document
     (dottySection = Delay = 0) == loop ? ($("#start").html("Restart"), $("#start").fadeIn(), $(".hs").fadeTo("slow", .1), $(".dottyClass").fadeTo("slow", .1), $("#particles-js").fadeOut("slow")) : audio.play()
 }), $("#loop").click(function() {
     loop = 0 == loop ? ($("#loop").css({
-        backgroundColor: "rgba(255,255,255,255",
+        backgroundColor: "rgba(255,255,255,255)",
         color: "black"
     }), !0) : ($("#loop").css({
-        backgroundColor: "rgba(0,0,0,0",
+        backgroundColor: "rgba(0,0,0,0)",
         color: "white"
     }), !1)
 });

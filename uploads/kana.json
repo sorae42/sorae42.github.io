@@ -1,5 +1,5 @@
 {
-   "INFO": "Japanese Hiragana and Katakana scripts in JSON",
+   "DESCRIPTION": "Japanese Hiragana and Katakana scripts in JSON.",
    "VERSION": 1,
    "hira": {
       "a": "あ",
@@ -97,20 +97,20 @@
       "wo": "ヲ",
       "n": "ン"
    },
-   "hiraSpecial": {
+   "hiraTenten": {
       "ga": "が",
       "ge": "げ",
       "gi": "ぎ",
       "go": "ご",
       "gu": "ぐ",
       "za": "ざ",
-      "ji (shi)": "じ",
-      "zu (su)": "ず",
+      "ji": "じ",
+      "zu": "ず",
       "ze": "ぜ",
       "zo": "ぞ",
       "da": "だ",
-      "ji (chi)": "ぢ",
-      "zu (tsu)": "づ",
+      "ji": "ぢ",
+      "zu": "づ",
       "de": "で",
       "do": "ど",
       "ba": "ば",
@@ -124,20 +124,20 @@
       "po": "ぼ",
       "pu": "ぷ"
    },
-   "kanaSpecial": {
+   "kanaTenten": {
       "ga": "ガ",
       "ge": "ゲ",
       "gi": "ギ",
       "go": "ゴ",
       "gu": "グ",
       "za": "ザ",
-      "ji (shi)": "ジ",
-      "zu (su)": "ズ",
+      "ji": "ジ",
+      "zu": "ズ",
       "ze": "ゼ",
       "zo": "ゾ",
       "da": "ダ",
-      "ji (chi)": "ヂ",
-      "zu (tsu)": "ヅ",
+      "ji": "ヂ",
+      "zu": "ヅ",
       "de": "デ",
       "do": "ド",
       "ba": "バ",

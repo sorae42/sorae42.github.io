@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<title>Welcome!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<p>It's fine, you are completely anonymous. Just type what you think about me, please be honest and don't be a troll.</p>
+<form>
+<input type="text" id="msg" name="msg" placeholder="What do you think about me?">
+
+</form>
+<br>
+<a href="https://www.twitter.com/_skyventuree">Twitter</a>
+</body>
+<script>
+let xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://rouxkarlus.pythonanywhere.com/paper-into-jar-submission');
+var formData = new FormData( document.getElementById("msg") );
+xhr.send(formData);
+</script>
+</html>

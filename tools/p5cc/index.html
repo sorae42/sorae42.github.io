@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 <title>Persona 5 Calling Card Maker</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <h2>Persona 5 Calling Card Maker</h2>
-<p>For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
+<p style="text-align:center">For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
+<div class="background">
 <form onSubmit="sendServer()" id="requestcard" method="POST"
   <label for="message">What do you want to write on the calling card?</label><br>
   <textarea name="message" cols="45" rows="4" maxlength="150"></textarea>
@@ -20,11 +21,14 @@
 <select name="server" id="server">
   <option value="0">rouxkarlus.pythonanywhere.com</option>
   <option value="1">p5cc.pythonanywhere.com</option>
-</select><br><br>
+</select><br>
+</div>
+<div class="background">
 <a href="/status.html">Server Status</a><br>
 <a href="copyright.html">Copyright</a><br>
 <a href="https://www.twitter.com/_skyventuree">Twitter</a> | <a href="https://ko-fi.com/jdewfiez">Buy me a coffee</a>
-<br><br><p>v.2.0.rewritten</p>
+</div>
+<br><p style="text-align:center;font-size:8px;">v.2.0.rewritten</p>
 </body>
 <script src="script/index.js"></script>
 </html>

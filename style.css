@@ -2,19 +2,41 @@
 
 body {
     font-family: 'Baloo Thambi 2', cursive;
-}
-
-#result {
-    border: 2px solid;
-    width: 100%;
-    height: 100%;
-}
-#sharelink {
-    width: 196px;
+    text-align: center;
 }
 
 table, td, th {
     border-collapse: collapse;
+}
+.background {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+textarea, form input[type="text"] {
+    border: 0px;
+    
+}
+
+#links { display: block; }
+
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: '\2794';
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,6 +50,14 @@ table, td, th {
     table, th, td {
         border: 1px solid black;
     }
+    .background {
+        box-shadow: 0px 0px 10px 5px #d2d2d2;
+    }
+    textarea, form input[type="text"] {
+        background: #ccc;
+        color: black;
+    }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,5 +71,14 @@ table, td, th {
     }
     table, th, td {
         border: 1px solid white;
+    }
+
+    .background {
+        background-color: #333;
+        box-shadow: 0px 0px 10px 5px #222;
+    }
+    textarea, form input[type="text"] {
+        background: grey;
+        color: white;
     }
 }

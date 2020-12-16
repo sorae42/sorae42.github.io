@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<title>Sky Notes Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>Sky notes converter</h2>
+<div class="background">
+    <p>Convert <span style="font-size:8px">awfully looking</span> Sky Music numbered script (<a href="../../uploads/horrible.jpeg">example</a>) to ABC Sky notes.</p>
+    <form onsubmit="return false;">
+      <label for="feed">Input your numbered Sky note here</label><br>
+      <textarea name="feed" id="feed" cols="45" rows="5" required></textarea>
+      <input type="button" value="Convert" onclick="feednote()">
+    </form>
+</div>
+<p>Result</p>
+<div class="background" id="noteresult">Please type your Sky note in the text box above.</div>
+<button onclick="clipboard()">Copy to clipboard</button>
+</body>
+<script src="script.js"></script>
+</html>

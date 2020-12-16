@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../../style.css">
 <title>Your calling card has been arrived!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,9 +11,11 @@
   <h2 id="arrivedMsg">Your calling card has been arrived!</h2>
   <p id="imgNoExist" style="color:red"></p>
   <div id="elemHide">
-  <img id="result" onerror="noimg()"><br>
-  Share this card: <input id="sharelink"><button onclick="copyCB()" id="copybtn">Copy</button>
-  <br>
+  <div class="background">
+    <img id="result" onerror="noimg()"><br>
+    Share this card: <input id="sharelink"><button onclick="copyCB()" id="copybtn">Copy</button>
+    <br>
+    </div>
   </div>
   <a href="index.html">New calling card</a><br>
   <a href="copyright.html">Copyright</a>

@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
 }
 
 #result {
@@ -9,6 +10,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 #sharelink {
     width: 196px;
 }
@@ -16,17 +18,17 @@ body {
 table, td, th {
     border-collapse: collapse;
 }
-h2 {
-    text-align: center;
-
-}
 .background {
     margin: 0 auto;
     border-radius: 10px;
-    width: 75%;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    width: 80%;
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin-bottom: 20px;
+}
+
+#links {
+    display: block;
 }
 
 #social {
@@ -37,8 +39,6 @@ ul {
     list-style: none;
 }
 ul li::before {
-    display: inline-block;
-    margin: 0 5px;
     content: '\2794';
 }
 
@@ -50,20 +50,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-
-.fa-youtube .fa-twitter {
-    width: 10%;
-
-}
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;

@@ -1,14 +1,13 @@
+let dt = new Date();
 function feednote() {
-  var sec = 0;
-  var ms  = 0;
-  var sw  = setInterval(function () {
-      ms += 1;
-      if (ms >= 1000) {
-            ms = 0;
-            sec += 1;
-      }
-  }, 1);
-  feedinput = document.getElementById("feed").value.split("\n");
+  var t1 = dt.getTime();
+  inp = document.getElementById("feed").value
+  feedinput = inp.split("\n");
+  if (inp === "") {
+      document.getElementById("announce").innerText = "No input provided.";
+      setTimeout(function () {document.getElementById("announce").innerText = "Result"}, 4000);
+      return false;
+  }
   // ...
   var chord = false;
   var result = "";
@@ -49,7 +48,14 @@ mainloop:
       else if (num > 10 && num <= 15) agn = "C" + (num - 10).toString();
       else {
             console.log(`Stopped. Reading: ${r} | [${i},${j}] -> ${num} (${typeof num})`);
-            result = `Reading: ${r} (position [${i},${j}]).\nSomething wrong happened, please try again.`;
+            var error1 = "";
+            if (isNaN(num)) {
+                  error1 = "an alphabet or a whitespace character";
+            }
+            else {
+                  error1 = "a value below 1 or above 15";
+            }
+            result = `Reading: ${r} (position [${i},${j}]).\nLine ${(parseInt(i, 10) + 1).toString()} contains ${error1}.\nPlease fix the error and try again.\nIf the error still present, kindly tweet at me @soraboken on Twitter so I can get into it.`;
             break mainloop;
         }
       result = result.concat(agn, ws);
@@ -58,8 +64,8 @@ mainloop:
   }
 
 document.getElementById("Result").innerText = result;
-      clearInterval(sw);
-      document.getElementById("announce").innerText = `Tap the box to copy. (took ${sec}.${ms}ms)`;
+      var t2 = dt.getTime();
+      document.getElementById("announce").innerText = `Tap the box to copy. (took ${t2-t1}ms)`;
 setTimeout(function () {document.getElementById("announce").innerText = "Result"}, 4000);
 }
 

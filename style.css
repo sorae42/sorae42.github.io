@@ -19,7 +19,7 @@ table, td, th {
 
 textarea, form input[type="text"] {
     border: 0px;
-    
+    outline: none;
 }
 
 #links { display: block; }
@@ -54,7 +54,7 @@ a:hover {
         box-shadow: 0px 0px 10px 5px #d2d2d2;
     }
     textarea, form input[type="text"] {
-        background: #ccc;
+        background: #eee;
         color: black;
     }
 

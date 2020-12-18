@@ -10,7 +10,7 @@
 <h2>Sky Numbered Notes Converter</h2>
 <h4>by soraboken</h4>
 <div class="background">
-    <p>Convert <span style="font-size:8px">awfully looking</span> Sky Music numbered script (<a href="../../uploads/horrible.jpeg">example</a>) to ABC Sky notes.</p>
+    <p>Convert <span style="font-size:8px">awfully looking</span> Sky Music numbered script (<a onclick="eg()">example</a>) to ABC Sky notes.</p>
     <p>The result can be later used at <a href="https://jmmelko.pythonanywhere.com">Sky Visual Music Sheet Maker</a> by jmmelko.</p>
     <form onsubmit="return false;">
       <label for="feed">Input your numbered Sky note here</label><br>
@@ -19,7 +19,8 @@
     </form>
 </div>
 <p id="announce">Result</p>
-<div class="background" id="Result" onclick="clipboard()">Please type your Sky note in the text box above.</div>
+<div class="background" id="Result" onclick="clipboard()" style="font-size:14px;">Please type your Sky note in the text box above.</div>
+<a onclick="troubleshoot()">Sheet Troubleshooting</a>
 <div id="social">
 <a href="https://www.youtube.com/c/jdewfiez" class="fa fa-youtube"></a>
 <a href="https://twitter.com/soraboken" class="fa fa-twitter"></a>

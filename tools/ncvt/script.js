@@ -1,6 +1,26 @@
-let dt = new Date();
+let TROUBLESHOOT = `If you are having difficulty fixing your music sheet, try to check your sheet if any of the following errors happens:
+1. Your sheet contains alphabet ASCII characters. (a → z, A → Z)
+2. Character that doesn't belong to the ASCII standard.
+3. One of the number that is below 1 or above 15.
+4. Wrong placement of bracket "(" and ")". For example, this will not accepted:
+4 6( 4 5) → "6(" 
+will wrongly place the wrong chord. (will not generate error)
+4 6 (4 5 ) → ")" 
+will generate an error.
+They should be fixed like this:
+4 6 (4 5) → Correct!
+`;
+function troubleshoot() {
+   document.getElementById("Result").innerText = TROUBLESHOOT;
+   document.getElementById("announce").innerText = "Troubleshoot your sheet";
+}
+
+function eg() {
+document.getElementById("Result").innerHTML = `<img src="../../uploads/horrible.jpeg" width="100%">`;
+document.getElementById("announce").innerText = "Example";
+}
+
 function feednote() {
-  var t1 = dt.getTime();
   inp = document.getElementById("feed").value
   feedinput = inp.split("\n");
   if (inp === "") {
@@ -8,7 +28,6 @@ function feednote() {
       setTimeout(function () {document.getElementById("announce").innerText = "Result"}, 4000);
       return false;
   }
-  // ...
   var chord = false;
   var result = "";
   var i, j, num;
@@ -19,6 +38,10 @@ mainloop:
       var r = feeder[j];
       function rmChr(str, chr) {return str.split(chr).join("");}
       // find the bracket to determine chord
+      if (r === "") {
+         console.warn("Ended with whitespace at line " + i);
+         break;
+      }
       if (r.includes("(")) {
         num = rmChr(r, "(");
         ws = "";
@@ -47,15 +70,15 @@ mainloop:
       else if (num > 5 && num <= 10) agn = "B" + (num - 5).toString();
       else if (num > 10 && num <= 15) agn = "C" + (num - 10).toString();
       else {
-            console.log(`Stopped. Reading: ${r} | [${i},${j}] -> ${num} (${typeof num})`);
+            console.error(`Stopped. Reading: ${r} | [${i},${j}] -> ${num} (${typeof num})`);
             var error1 = "";
             if (isNaN(num)) {
-                  error1 = "an alphabet or a whitespace character";
+                  error1 = "an alphabet character";
             }
             else {
                   error1 = "a value below 1 or above 15";
             }
-            result = `Reading: ${r} (position [${i},${j}]).\nLine ${(parseInt(i, 10) + 1).toString()} contains ${error1}.\nPlease fix the error and try again.\nIf the error still present, kindly tweet at me @soraboken on Twitter so I can get into it.`;
+            result = `Reading: ${r} (position [${i},${j}]).\nLine ${(i + 1).toString()} contains ${error1}.\nPlease fix the error and try again.`;
             break mainloop;
         }
       result = result.concat(agn, ws);
@@ -64,8 +87,7 @@ mainloop:
   }
 
 document.getElementById("Result").innerText = result;
-      var t2 = dt.getTime();
-      document.getElementById("announce").innerText = `Tap the box to copy. (took ${t2-t1}ms)`;
+      document.getElementById("announce").innerText = `Done, tap the box to copy.`;
 setTimeout(function () {document.getElementById("announce").innerText = "Result"}, 4000);
 }
 

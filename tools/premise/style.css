@@ -1,86 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
-
 * {
-    font-family: 'Baloo Thambi 2', cursive;
+	font-family: 'Baloo Thambi 2', cursive;
 }
 
 @media (prefers-color-scheme: light) {
-        body {
-                background-color: pink;
-                } 
-        #info {
-                font-size: 12px;
-                color: gray;
-                text-align: center;
-                }
-        #box {
-                border:1px solid #D6D6D6; 
-                padding:5%; 
-                background:#fff; 
-                margin-left:5%; 
-                width: 80%;
-            }
-        input[type="text"] {
-                border: 0px;
-                border-bottom: 2px solid blue;
-                outline: none;
-                width: 40%;
-                color: black;
-            }
-        button {
-                background: white;
-                border: 2px solid blue;
-                outline: none;
-                -webkit-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-            }
-        button:hover {
-                background-color: blue;
-                color: white;
-            }
-        a {
-            color: blue;
-        }
-    }
-        
+	body {
+		background-color: pink;
+	}
+	#info {
+		font-size: 12px;
+		color: gray;
+		text-align: center;
+	}
+	#box {
+		border: 1px solid #D6D6D6;
+		padding: 5%;
+		background: #fff;
+		margin-left: 5%;
+		width: 80%;
+	}
+	input[type="text"] {
+		border-bottom: 2px solid blue;
+		outline: none;
+		width: 40%;
+		color: black;
+	}
+	button {
+		background: white;
+		border: 2px solid blue;
+		outline: none;
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	button:hover {
+		background-color: blue;
+		color: white;
+	}
+	a {
+		color: blue;
+	}
+}
+
 @media (prefers-color-scheme: dark) {
-        body {
-                background-color: #a12565;
-                } 
-        #info {
-                font-size: 12px;
-                color: white;
-                text-align: center;
-                }
-        #box {
-                border:1px solid #353535; 
-                padding:5%; 
-                background:#333; 
-                margin-left:5%; 
-                width: 80%;
-                color: white;
-            }
-        input[type="text"] {
-                border: 0px;
-                border-bottom: 2px solid cyan;
-                outline: none;
-                width: 40%;
-                background-color: grey;
-                color: white
-            }
-        button {
-                background: #333;
-                border: 2px solid cyan;
-                outline: none;
-                color: white;
-                -webkit-transition-duration: 0.4s;
-                transition-duration: 0.4s;
-            }
-        button:hover {
-                background-color: cyan;
-                color: #333;
-            }
-        }
-        a {
-                color: cyan;
-                }
+	body {
+		background-color: #a12565;
+	}
+	#info {
+		font-size: 12px;
+		color: white;
+		text-align: center;
+	}
+	#box {
+		border: 1px solid #353535;
+		padding: 5%;
+		background: #333;
+		margin-left: 5%;
+		width: 80%;
+		color: white;
+	}
+	input[type="text"] {
+		border-bottom: 2px solid cyan;
+		outline: none;
+		width: 40%;
+		background-color: grey;
+		color: white
+	}
+	button {
+		background: #333;
+		border: 2px solid cyan;
+		outline: none;
+		color: white;
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	button:hover {
+		background-color: cyan;
+		color: #333;
+	}
+}
+
+a {
+	color: cyan;
+}

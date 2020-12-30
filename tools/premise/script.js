@@ -32,6 +32,7 @@ function premiseAnalyze() {
 function makeAdorable() {
     document.getElementById("premise").innerHTML = premiseAnalyze()
 }
+
 window.onload = function() {
     for (quote = loadFile("quote.txt").split("|"), i = 0; i < quote.length; i++) quote[i] = quote[i].replace(/\n/g, "")
 };

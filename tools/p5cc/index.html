@@ -1,39 +1,39 @@
 <!doctype html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="../../style.css">
-<title>Persona 5 Calling Card Maker</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<h2>Persona 5 Calling Card Maker</h2>
-<p style="text-align:center">For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
-<div class="background">
-<form onSubmit="sendServer()" id="requestcard" method="POST"
-  <label for="message">What do you want to write on the calling card?</label><br>
-  <textarea name="message" cols="45" rows="4" maxlength="150"></textarea>
-  <br>
-  <input id="SubmitButton" type="submit" value="Request a Calling Card!">
-</form><br>
-<label for="cars">Select Server: </label>
 
-<select name="server" id="server">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title>Persona 5 Calling Card Maker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h2>Persona 5 Calling Card Maker</h2>
+    <p style="text-align:center">For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
+    <div class="background">
+        <form onSubmit="sendServer()" id="requestcard" method="POST" <label for="message">What do you want to write on the calling card?</label><br>
+            <textarea name="message" cols="45" rows="4" maxlength="150"></textarea>
+            <br>
+            <input id="SubmitButton" type="submit" value="Request a Calling Card!">
+        </form><br>
+        <label for="cars">Select Server: </label>
+
+        <select name="server" id="server">
   <option value="0">rouxkarlus.pythonanywhere.com</option>
   <option value="1">p5cc.pythonanywhere.com</option>
 </select><br>
-</div>
-<div class="background">
-<a href="/status.html">Server Status</a><br>
-<a href="copyright.html">Copyright</a><br>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<a href="https://www.youtube.com/c/jdewfiez" class="fa fa-youtube"></a>
-<a href="https://twitter.com/soraboken" class="fa fa-twitter"></a>
-<a href="https://ko-fi.com/jdewfiez">Buy me a coffee</a>
-</div>
-<br><p style="text-align:center;font-size:8px;">v.2.0.rewritten</p>
+    </div>
+    <div class="background">
+        <a href="copyright.html">Copyright</a><br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.youtube.com/c/jdewfiez" class="fa fa-youtube"></a>
+        <a href="https://twitter.com/soraboken" class="fa fa-twitter"></a>
+        <a href="https://ko-fi.com/jdewfiez">Buy me a coffee</a>
+    </div>
+    <br>
+    <p style="text-align:center;font-size:8px;">v.2.0.rewritten</p>
 </body>
 <script src="script/index.js"></script>
+
 </html>
-
-

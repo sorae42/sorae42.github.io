@@ -12,17 +12,11 @@
     <h2>Persona 5 Calling Card Maker</h2>
     <p style="text-align:center">For the sake of effortlessly making a calling card. All cards created are anonymous and cannot be caught by all means.</p>
     <div class="background">
-        <form onSubmit="sendServer()" id="requestcard" method="POST" <label for="message">What do you want to write on the calling card?</label><br>
+        <form action="https://rouxkarlus.pythonanywhere.com/p5cc" id="requestcard" method="POST" <label for="message">What do you want to write on the calling card?</label><br>
             <textarea name="message" cols="45" rows="4" maxlength="150"></textarea>
             <br>
             <input id="SubmitButton" type="submit" value="Request a Calling Card!">
-        </form><br>
-        <label for="cars">Select Server: </label>
-
-        <select name="server" id="server">
-  <option value="0">rouxkarlus.pythonanywhere.com</option>
-  <option value="1">p5cc.pythonanywhere.com</option>
-</select><br>
+        </form>
     </div>
     <div class="background">
         <a href="copyright.html">Copyright</a><br>

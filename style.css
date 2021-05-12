@@ -14,8 +14,7 @@ table, td, th {
     margin: 0 auto;
     border-radius: 10px;
     width: 80%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px;
     margin-bottom: 20px;
 }
 

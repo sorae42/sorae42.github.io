@@ -12,7 +12,7 @@ function loadFile(e) {
 
 function swtloreCheck() {
     var e = document.getElementById("swtrole").checked;
-    return document.getElementById("swtlore").innerHTML = 1 == e ? "They can randomly switch role!" : "They can't switch role...", e
+    return e
 }
 
 function nameAnalyze() {

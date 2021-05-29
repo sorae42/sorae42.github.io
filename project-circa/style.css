@@ -1,0 +1,26 @@
+@font-face {
+    font-family: QDR;
+    src: url('assets/quarrydigger.ttf');
+}
+
+body {
+    background-color: black;
+    color:white;
+    font-family: 'QDR';
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    object-fit: contain;
+}
+
+#content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+}

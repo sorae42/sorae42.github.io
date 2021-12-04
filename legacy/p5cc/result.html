@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <title>Your calling card has been arrived!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #result {
+            border: 2px solid;
+            width: 95%;
+            height: auto;
+        }
+        
+        #sharelink {
+            width: 196px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="arrivedMsg">Your calling card has been arrived!</h2>
+    <p id="imgNoExist" style="color:red"></p>
+    <div id="elemHide">
+        <div class="background">
+            <img id="result" onerror="noimg()"><br> Share this card: <input id="sharelink"><button onclick="copyCB()" id="copybtn">Copy</button>
+            <br>
+        </div>
+    </div>
+    <a href="index.html">New calling card</a><br>
+    <a href="copyright.html">Copyright</a><br>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://www.youtube.com/c/jdewfiez" class="fa fa-youtube"></a>
+    <a href="https://twitter.com/soraboken" class="fa fa-twitter"></a>
+    <a href="https://ko-fi.com/jdewfiez">Buy me a coffee</a>
+</body>
+<script src="script/result.js"></script>
+
+</html>

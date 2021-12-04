@@ -17,7 +17,7 @@ function showTroubleshoot() {
 }
 
 function showExample() {
-    document.getElementById("Result").innerHTML = `<img src="resources/horrible.jpeg" width="100%">`;
+    document.getElementById("Result").innerHTML = `<img src="../../uploads/horrible.jpeg" width="100%">`;
     document.getElementById("announce").innerText = "Example";
 }
 

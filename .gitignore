@@ -3,3 +3,4 @@
 *_ignore
 *.db
 /tools/ncvt/sample
+.DS_Store

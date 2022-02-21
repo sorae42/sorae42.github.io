@@ -144,7 +144,6 @@ nav.hide {
     color: black;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    height: auto;
 }
 
 #page-works>div {
@@ -232,7 +231,7 @@ screen and (max-device-width:767px) {
 
     #page-works {
         text-align: center;
-        height: 100vh;
+        height: 120vh;
     }
 
     #page-works>div {

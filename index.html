@@ -7,20 +7,67 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<div id="background"></div>
+		<nav>
+			<ul>
+				<li><a href="#page-top">TOP</a></li>
+				<li><a href="#page-works">WORKS</a></li>
+				<li><a href="#page-contact">CONTACT</a></li>
+			</ul>
+		</nav>
+
+		<div id="page-top">
+			<div class="content">
+				<h2>Hi, I am Rosetta.</h2>
+				<p>I am a freelance of lazyness. I do stuff, that's all.</p>
+				<p>I also really bad at Web Design. Sorry.</p>
+				<div id="social">
+					<a href="https://www.youtube.com/channel/UCITM2whX5c-88KPL56ndUlw"><i class="fa fa-youtube-play fa-2x"></i></a>
+					<a href="https://github.com/skyventuree"><i class="fa fa-github fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
 		
-		<h2>Rosetta Projects</h2>
-		<div class="background">
-			UPDATE 02/20/2022: Website is being re-worked on! It will look much better, I swear!
+		<div id="page-works">
+			<!-- BMS Radio -->
+			<div class="content" id="bms-radio">
+				<img src="assets/preview/bms_radio.png">
+				<div>
+					<h2>BMS Radio Station App</h2>
+					<p>Discover and listen to a collection BMS music. </p>
+					<p>An Electron wrapper of <a href="https://http://be-music.surge.sh/">be-music.surge.sh</a>, hosted by <a href="https://twitter.com/dtinth">flicknote</a>.</p>
+					<span class="download-btn">
+						<a href="https://github.com/skyventuree/bms-radio/releases"><button><i class="fa fa-arrow-circle-down"></i> Download</button></a> or
+					</span>
+					<a href="https://github.com/skyventuree/bms-radio"><button><i class="fa fa-github"></i> GitHub</button></a>
+				</div>
+			</div>
+			<hr>
+			<!-- P5CC -->
+			<div class="content" id="p5cc">
+				<img src="assets/preview/p5cc.png">
+				<div>
+					<h2>Persona 5 Calling Card Maker</h2>
+					<p>A tool that let you make calling cards from Persona 5 series by ATLUS.</p>
+					<p>All credits go to the original owners. <a href="https://skyventuree.github.io/tools/p5cc/copyright.html">See more...</a></p>
+					<a href="https://skyventuree.github.io/tools/p5cc/"><button><i class="fa fa-external-link"></i> Try it out</button></a>
+				</div>
+			</div>
 		</div>
-		<div class="background">
-  			<a href="/tools/p5cc/index.html">Persona 5 Calling Card Maker</a><br>
-  			<a href="/tools/ncvt/index.html">Sky note converter</a>
+
+		<div id="page-contact">
+			<div class="content">
+				<p>If you want to get in touch with me, feel free to shoot me an email.</p>
+				<a href="mailto:bonniefoxy2009@gmail.com"><button><i class="fa fa-envelope"></i> Send me email</button></a>
+				<p>I will try to answer as soon as possible.</p>
+				<p>I am <strong>NOT</strong> interested in any kind of job offer email so please don't send them <3</p>
+			</div>
 		</div>
-		
-		<div class="background" id="social">
-			<a href="https://www.youtube.com/c/jdewfiez" class="fa fa-youtube"></a>
-			<a href="https://twitter.com/soraboken" class="fa fa-twitter"></a>
-			<a href="https://ko-fi.com/jdewfiez">Buy me a coffee</a>
+
+		<div id="credit">
+			<p>(c)<span id="currentyear"></span> Rosetta Emerson/sorae_42. All rights reserved.</p>
 		</div>
+
+		<script src="script.js"></script>
 	</body>
 </html>

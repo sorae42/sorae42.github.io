@@ -124,7 +124,8 @@ nav.hide {
 
 #page-top>div>#social {
     display: flex;
-    align-items: left;
+    align-items: center;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 

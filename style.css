@@ -138,6 +138,21 @@ nav.hide {
     color: #0099ff;
 }
 
+#page-top>div>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#page-top>div>i:hover {
+    transform: scale(1.5);
+}
+
+#page-top>div>i:active {
+    transform: translate(0, 14px);
+}
+
 /* Works page */
 /* This broke on mobile. No idea why. */
 #page-works {

@@ -1,41 +1,57 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>/rosetta/</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>/shigukk/</title>
+
+		<link rel="stylesheet" type="text/css" href="static/main.css">
+		<link rel="stylesheet" type="text/css" href="static/button.css">
+		<link rel="stylesheet" type="text/css" href="static/works.css">
+		<link rel="stylesheet" type="text/css" href="static/top.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Rosetta's homepage">
+		<meta name="description" content="My name is Rosetta, I do a variety of works.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://skyventuree.github.io">
+		<meta property="og:title" content="Rosetta's homepage">
+		<meta property="og:description" content="My name is Rosetta, I do a variety of works.">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://skyventuree.github.io">
+		<meta property="twitter:title" content="Rosetta's homepage">
+		<meta property="twitter:description" content="My name is Rosetta, I do a variety of works.">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
+		<base target="_blank" rel="noopener noreferrer">
 		<div id="background"></div>
-		<nav>
-			<ul>
-				<li><a href="#page-top">TOP</a></li>
-				<li><a href="#page-works">WORKS</a></li>
-				<li><a href="#page-contact">CONTACT</a></li>
-			</ul>
-		</nav>
-
 		<div id="page-top">
-			<div class="content">
-				<h2>Hi, I am Rosetta.</h2>
-				<p>Also known as sorae_42 or just "sora" for short.</p>
-				<p>I am a freelancer of lazyness. I do stuff, that's all.</p>
-				<p>I also really bad at Web Design. Sorry.</p>
-				<div id="social">
-					<a href="https://www.youtube.com/channel/UCITM2whX5c-88KPL56ndUlw"><i class="fa fa-youtube-play fa-2x"></i></a>
-					<a href="https://github.com/skyventuree"><i class="fa fa-github fa-2x"></i></a>
-				</div>
-				<br>
-				<i class="fa fa-arrow-down fa-2x" onclick="window.scrollTo(0, 420)"></i>
+			<div id="intro">
+				<h1>My name is Rosetta</h1>
+				<p>and I do a variety of works.</p>
+				<p style="opacity:0;animation: fadeIn 1s 2s forwards">It's my pleasure to meet you.</p>
+			</div>
+			<div id="social">
+				<a href="https://ko-fi.com/jdewfiez"><i class="fa fa-coffee"></i></a>
+				<a href="https://www.youtube.com/channel/UCITM2whX5c-88KPL56ndUlw"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://github.com/skyventuree"><i class="fa fa-github"></i></a>
+				<a href="mailto:bonniefoxy2009@gmail.com"><i class="fa fa-envelope"></i></a>
+			</div>
+			<div id="see-more">
+				<p>Works & Projects</p>
+				<i class="fa fa-angle-down fa-2x"></i>
 			</div>
 		</div>
 		
 		<div id="page-works">
 			<!-- BMS Radio -->
-			<div class="content" id="bms-radio">
-				<img src="assets/preview/bms_radio.png">
-				<div>
+			<article id="bms-radio">
+				<div class="content">
 					<h2>BMS Radio Station App</h2>
 					<p>Discover and listen to a collection of BMS music. </p>
 					<p>An Electron wrapper of <a href="https://be-music.surge.sh/">be-music.surge.sh</a>, hosted by <a href="https://twitter.com/dtinth">flicknote</a>.</p>
@@ -44,31 +60,28 @@
 					</span>
 					<a href="https://github.com/skyventuree/bms-radio"><button><i class="fa fa-github"></i> GitHub</button></a>
 				</div>
-			</div>
-			<hr>
+			</article>
 			<!-- P5CC -->
-			<div class="content" id="p5cc">
-				<img src="assets/preview/p5cc.png">
+			<article id="p5cc">
 				<div>
 					<h2>Persona 5 Calling Card Maker</h2>
 					<p>A tool that let you make calling cards from Persona 5 series by ATLUS.</p>
 					<p>All credits go to the original owners. <a href="https://skyventuree.github.io/tools/p5cc/copyright.html">See more...</a></p>
 					<a href="https://skyventuree.github.io/tools/p5cc/"><button><i class="fa fa-external-link"></i> Try it out</button></a>
 				</div>
-			</div>
-		</div>
-
-		<div id="page-contact">
-			<div class="content">
-				<p>If you want to get in touch with me, feel free to shoot me an email.</p>
-				<a href="mailto:bonniefoxy2009@gmail.com"><button><i class="fa fa-envelope"></i> Send me email</button></a>
-				<p>I will try to answer as soon as possible.</p>
-				<p>I am <strong>NOT</strong> interested in any kind of job offer email so please don't send them <3</p>
-			</div>
+			</article>
+			<article id="socialnet">
+				<div>
+					<h2>SocialNet</h2>
+				</div>
+			</article>
 		</div>
 
 		<div id="credit">
-			<p>(c)<span id="currentyear"></span> Rosetta Emerson/sorae_42. All rights reserved.</p>
+			<p>
+				<i class="fa fa-copyright"></i><span id="currentyear">	
+				</span> Rosetta Emerson/sorae_42. All rights reserved.
+			</p>
 		</div>
 
 		<script src="script.js"></script>

@@ -33,6 +33,13 @@ div#background {
     animation: fadeIn 1s 0.3s forwards; 
 }
 
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+a:hover {color: #006eff;}
+
 #credit {
     position: relative;
     display: flex;

@@ -22,10 +22,12 @@
 #page-top>#social>* {
     padding-right: 10px;
     color: white;
-    font-size: 42px;
 }
 
-#page-top>#social>a>i {transition: color 0.1s linear;}
+#page-top>#social>a>i {
+    font-size: 42px;
+    transition: color 0.1s linear;
+}
 
 #page-top>#social>a>i:hover {color: #006eff;}
 
@@ -62,6 +64,8 @@ screen and (max-device-width:767px) {
         transform: translateX(-50%);
         text-align: center;
     }
+
+    #page-top>#social>a>i {font-size: 32px;}
 
     #page-top>#intro {
         top: 50%;

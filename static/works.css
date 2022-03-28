@@ -60,11 +60,11 @@ article>.content {
     transition: all 0.3s ease-in-out;
 }
 
-article>.content:hover {
+article>.content:hover, article>.content:active {
     opacity: 1;
 }
 
-article>.content:hover+.bg {
+article>.content:hover+.bg, article>.content:active+.bg {
     filter: blur(10px);
     transform: scale(0.96);
 }

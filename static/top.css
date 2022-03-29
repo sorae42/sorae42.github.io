@@ -59,13 +59,19 @@
 @media screen and (max-width:767px),
 screen and (max-device-width:767px) {
     #page-top>div {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         text-align: center;
     }
 
-    #page-top>#social>a>i {font-size: 32px;}
+    #page-top>#social {
+        display: inline-block;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-top>#social>a>i {
+        font-size: 32px;
+    }
 
     #page-top>#intro {
         top: 50%;

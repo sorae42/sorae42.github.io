@@ -4,6 +4,12 @@
     animation: fadeIn 1s 0.8s forwards;
 }
 
+#name {transition: all 0.2s ease-in-out;}
+
+#name.hidden {
+    opacity: 0;
+}
+
 #page-top>div {
     position: absolute;
 }

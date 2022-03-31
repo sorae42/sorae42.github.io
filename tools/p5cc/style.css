@@ -83,3 +83,10 @@ a:hover {
         color: white;
     }
 }
+
+#notice {
+    background-color: rgb(255, 255, 200);
+    border: 1px yellow solid;
+    font-weight: bold;
+    color: black;
+}

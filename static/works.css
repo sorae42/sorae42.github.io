@@ -3,8 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    transform: translateX(5%);
+    width: 100%;
 }
 
 #page-works>article {

@@ -84,8 +84,8 @@ article>.bg {
 /* Thumbnails for each section */
 
 #bms-radio>.bg {
-    background: url('../assets/preview/bms_radio.png') no-repeat center center;
-    background-size: contain;
+    background: url('../assets/preview/bms-radio.png') no-repeat center center;
+    background-size: cover;
 }
 
 #p5cc>.bg {
@@ -120,7 +120,12 @@ article>.bg {
 
 #fb-encoder>.bg {
     background: url('../assets/preview/fbencoder.png') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
+}
+
+#altelier-shop>.bg {
+    background: url('../assets/preview/placeholder-altelier.png') no-repeat center center;
+    background-size: cover;
 }
 
 @media screen and (max-width:767px),

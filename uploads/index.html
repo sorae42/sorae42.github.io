@@ -14,21 +14,23 @@
     </style>
 
     <h1>Index of /uploads</h1>
-    <ul id="file-list">
-        <li style="list-style:unset"><a href="#">index.html</a></li>
-    </ul>
+    <ul id="file-list"></ul>
     
     <script>
         const links = [
+            "index.html",
             "kana.json",
             "kanjiapi.json",
-            "TRR_NguyenDucNghia.pdf"
-        ];
+            "TRR_NguyenDucNghia.pdf",
+            "aquarelle010.mp3",
+            "youtube lost links.txt"
+        ].sort();
 
         const lists = document.createDocumentFragment();
         for (let x in links) {
             const li = document.createElement('li');
             li.innerHTML = `<a href="${links[x]}">${links[x]}</a>`;
+            if (links[x] === "index.html") li.style.listStyle = "unset";
             lists.appendChild(li);
         }
 

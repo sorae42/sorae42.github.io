@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/uploads</title>
+</head>
+<body>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+
+    <h1>Index of /uploads</h1>
+    <ul id="file-list">
+        <li style="list-style:unset"><a href="#">index.html</a></li>
+    </ul>
+    
+    <script>
+        const links = [
+            "kana.json",
+            "kanjiapi.json",
+            "TRR_NguyenDucNghia.pdf"
+        ];
+
+        const lists = document.createDocumentFragment();
+        for (let x in links) {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${links[x]}">${links[x]}</a>`;
+            lists.appendChild(li);
+        }
+
+        document.querySelector("#file-list").appendChild(lists);
+    </script>
+</body>
+</html>

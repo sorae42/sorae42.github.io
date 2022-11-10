@@ -1,6 +1,1 @@
-*.py
-*.pyc
-*_ignore
-*.db
-/tools/ncvt/sample
 .DS_Store

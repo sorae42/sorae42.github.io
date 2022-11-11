@@ -1,9 +1,6 @@
 <script>
-
+    import Intro from "./components/introduction.svelte";
 </script>
 
-<p>Hello world.</p>
+<Intro />
 
-<style lang="scss">
-
-</style>

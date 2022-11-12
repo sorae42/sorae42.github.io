@@ -1,0 +1,62 @@
+{
+    "otherWorks": [
+        {
+            "name": "Simply Gensokyo",
+            "description": "A Stepmania theme based on Simply Love, with Touhou visual included.",
+            "links": [
+                {
+                    "name": "Source code",
+                    "link": "https://github.com/sorae42/Simply-Gensokyo",
+                    "icon": "github"
+                }
+            ],
+            "background": ""
+        },
+        {
+            "name": "Altelier Shop",
+            "description": "Shop for rhythm gamers. Now closed.",
+            "links": [
+                {
+                    "name": "Source code",
+                    "link": "https://github.com/JinPots/alter6k-pre-order",
+                    "icon": "github"
+                }
+            ],
+            "background": ""
+        },
+        {
+            "name": "BMS Radio Station",
+            "description": "Discover and listen to a collection of BMS music.",
+            "links": [
+                {
+                    "name": "Download",
+                    "link": "https://github.com/skyventuree/bms-radio/releases",
+                    "icon": "arrow-circle-down"
+                },
+                {
+                    "name": "Source code",
+                    "link": "https://github.com/skyventuree/bms-radio/",
+                    "icon": "github"
+                }
+            ],
+            "background": ""
+        },
+        {
+            "name": "Facebook 60 FPS Re-encoder",
+            "description": "A tool to re-encode your Facebook video to support 60 FPS uploading.",
+            "links": [
+                {
+                    "name": "Download",
+                    "link": "https://github.com/skyventuree/bms-radio/releases",
+                    "icon": "arrow-circle-down"
+                },
+                {
+                    "name": "Source code",
+                    "link": "https://github.com/skyventuree/bms-radio/",
+                    "icon": "github"
+                }
+            ],
+            "background": ""
+        }
+    ]
+}

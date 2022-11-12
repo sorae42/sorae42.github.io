@@ -15,7 +15,6 @@
     </span>
     <br>
     <p>I'm a freelance developer and a content creator.</p>
-    
     <span id="social">
         {#each social as links}
             <a href="{links.href}"><i class="fa fa-{links.icon}"></i></a>
@@ -44,7 +43,8 @@
     }
 
     h1 {
-        margin-top: -12px;
+        font-size: 3.2em;
+        margin-top: -42px;
     }
 
     #social {
@@ -59,7 +59,7 @@
             
             i {
                 color: white;
-                font-size: 32px;
+                font-size: 40px !important;
                 
                 &:hover {
                     color: #416ddf;

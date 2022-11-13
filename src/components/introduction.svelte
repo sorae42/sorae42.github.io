@@ -41,6 +41,7 @@
             -webkit-text-fill-color: transparent;
         }
     }
+    
 
     h1 {
         font-size: 3.2em;
@@ -66,6 +67,11 @@
                 }
             }
             
+        }
+
+        @include for_breakpoint(mobile) {
+            width: 80vw;
+            align-items: center;
         }
     }
 

@@ -5,9 +5,8 @@
             "description": "A Stepmania theme based on Simply Love, with Touhou visual included.",
             "links": [
                 {
-                    "name": "Source code",
-                    "link": "https://github.com/sorae42/Simply-Gensokyo",
-                    "icon": "github"
+                    "type": "source",
+                    "link": "https://github.com/sorae42/Simply-Gensokyo"
                 }
             ],
             "background": ""
@@ -17,9 +16,8 @@
             "description": "Shop for rhythm gamers. Now closed.",
             "links": [
                 {
-                    "name": "Source code",
-                    "link": "https://github.com/JinPots/alter6k-pre-order",
-                    "icon": "github"
+                    "type": "source",
+                    "link": "https://github.com/JinPots/alter6k-pre-order"
                 }
             ],
             "background": ""
@@ -29,12 +27,12 @@
             "description": "Discover and listen to a collection of BMS music.",
             "links": [
                 {
-                    "name": "Download",
+                    "type": "download",
                     "link": "https://github.com/skyventuree/bms-radio/releases",
-                    "icon": "arrow-circle-down"
+                    "icon": ""
                 },
                 {
-                    "name": "Source code",
+                    "type": "source",
                     "link": "https://github.com/skyventuree/bms-radio/",
                     "icon": "github"
                 }
@@ -46,17 +44,30 @@
             "description": "A tool to re-encode your Facebook video to support 60 FPS uploading.",
             "links": [
                 {
-                    "name": "Download",
-                    "link": "https://github.com/skyventuree/bms-radio/releases",
+                    "type": "download",
+                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder/release",
                     "icon": "arrow-circle-down"
                 },
                 {
-                    "name": "Source code",
-                    "link": "https://github.com/skyventuree/bms-radio/",
-                    "icon": "github"
+                    "type": "source",
+                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder"
                 }
             ],
             "background": ""
+        },
+        {
+            "name": "TomakoSMP",
+            "description": "A small website I made for my own Minecraft SMP server.",
+            "links": [
+                {
+                    "type": "link",
+                    "link": "https://skyventuree.github.io/tomakosmp/"
+                },
+                {
+                    "type": "source",
+                    "link": "https://github.com/skyventuree/tomakosmp/"
+                }
+            ]
         }
     ]
 }

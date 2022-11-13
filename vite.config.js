@@ -7,7 +7,14 @@ export default defineConfig({
     base: "./",
     plugins: [
         svelte({
-            preprocess: [sveltePreprocess(), importAssets()],
+            preprocess: [
+                sveltePreprocess({
+                    scss: {
+                        prependData: "@import './src/mixin.scss';",
+                    },
+                }),
+                importAssets(),
+            ],
         }),
     ],
 });

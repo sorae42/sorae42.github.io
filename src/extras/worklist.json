@@ -8,8 +8,7 @@
                     "type": "source",
                     "link": "https://github.com/sorae42/Simply-Gensokyo"
                 }
-            ],
-            "background": ""
+            ]
         },
         {
             "name": "Altelier Shop",
@@ -19,8 +18,7 @@
                     "type": "source",
                     "link": "https://github.com/JinPots/alter6k-pre-order"
                 }
-            ],
-            "background": ""
+            ]
         },
         {
             "name": "BMS Radio Station",
@@ -36,8 +34,7 @@
                     "link": "https://github.com/skyventuree/bms-radio/",
                     "icon": "github"
                 }
-            ],
-            "background": ""
+            ]
         },
         {
             "name": "Facebook 60 FPS Re-encoder",
@@ -52,8 +49,7 @@
                     "type": "source",
                     "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder"
                 }
-            ],
-            "background": ""
+            ]
         },
         {
             "name": "TomakoSMP",

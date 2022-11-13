@@ -8,7 +8,7 @@
 </script>
 
 <div id="works">
-    <h1>my works <i class="fa fa-chevron-right"></i></h1>
+    <h1 class="header">my works <i class="fa fa-chevron-right"></i></h1>
     
     <div id="featured-work">
         <img src="../assets/p5cc-card.jpeg" alt="P5CC card sample" />
@@ -59,7 +59,7 @@
     }
     
     div#works {
-        h1, h2, p {
+        .header {
             margin-left: 5vw;
         }
     }
@@ -71,15 +71,16 @@
     div.content {
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         border-radius: 10px;
-        padding-right: 4%;
-
+        padding-left: 5%;
+        padding-right: 5%;
+        
         h1, p {
             margin-left: 0;
             margin-top: 0;
-            margin-bottom: 100px;
         }
 
         div.details {
@@ -94,6 +95,16 @@
 
             button {
                 margin: 10px;
+            }
+        }
+
+        @include for_breakpoint(mobile) {
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+
+            h2, p {
+                padding: 0 !important;
             }
         }
     }
@@ -123,7 +134,7 @@
 
         .content {
             flex-direction: column;
-            justify-content: left;
+            justify-content: center;
             text-align: center;
             box-shadow: none;
         }
@@ -159,6 +170,15 @@
             
             &:hover {
                 filter: invert(1);
+            }
+        }
+
+        @include for_breakpoint(mobile) {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 75%;
             }
         }
     }

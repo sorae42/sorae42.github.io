@@ -27,9 +27,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: fit-content;
         height: 100vh;
         margin: 0 auto;
-        padding-left: 5vw;
+        margin-left: 5vw;
 
         span#greet {
             text-align: left;
@@ -39,6 +40,10 @@
             background: linear-gradient(to right, #9939FF, #5151FF);
             background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        @include for_breakpoint(mobile) {
+            p { text-align: center; }
         }
     }
     

@@ -1,0 +1,69 @@
+{
+    "otherWorks": [
+        {
+            "name": "Simply Gensokyo",
+            "description": "A Stepmania theme based on Simply Love, with Touhou visual included.",
+            "links": [
+                {
+                    "type": "source",
+                    "link": "https://github.com/sorae42/Simply-Gensokyo"
+                }
+            ]
+        },
+        {
+            "name": "Altelier Shop",
+            "description": "Shop for rhythm gamers. Now closed.",
+            "links": [
+                {
+                    "type": "source",
+                    "link": "https://github.com/JinPots/alter6k-pre-order"
+                }
+            ]
+        },
+        {
+            "name": "BMS Radio Station",
+            "description": "Discover and listen to a collection of BMS music.",
+            "links": [
+                {
+                    "type": "download",
+                    "link": "https://github.com/skyventuree/bms-radio/releases",
+                    "icon": ""
+                },
+                {
+                    "type": "source",
+                    "link": "https://github.com/skyventuree/bms-radio/",
+                    "icon": "github"
+                }
+            ]
+        },
+        {
+            "name": "Facebook 60 FPS Re-encoder",
+            "description": "A tool to re-encode your Facebook video to support 60 FPS uploading.",
+            "links": [
+                {
+                    "type": "download",
+                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder/release",
+                    "icon": "arrow-circle-down"
+                },
+                {
+                    "type": "source",
+                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder"
+                }
+            ]
+        },
+        {
+            "name": "TomakoSMP",
+            "description": "A small website I made for my own Minecraft SMP server.",
+            "links": [
+                {
+                    "type": "link",
+                    "link": "https://skyventuree.github.io/tomakosmp/"
+                },
+                {
+                    "type": "source",
+                    "link": "https://github.com/skyventuree/tomakosmp/"
+                }
+            ]
+        }
+    ]
+}

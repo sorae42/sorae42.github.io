@@ -8,7 +8,7 @@
 </script>
 
 <div id="works">
-    <h1 class="header">my works <i class="fa fa-chevron-right"></i></h1>
+    <h1 class="header"><i class="fa fa-chevron-left"></i> my works</h1>
     
     <div id="featured-work">
         <img src="../assets/p5cc-card.jpeg" alt="P5CC card sample" />
@@ -60,7 +60,16 @@
     
     div#works {
         .header {
-            margin-left: 5vw;
+            margin-right: 5vw;
+            text-align: right;
+
+            i { font-size: 36px !important; }
+
+            @include for_breakpoint(mobile) {
+                text-align: center;
+                
+                i { display: none; }
+            }
         }
     }
     
@@ -98,7 +107,7 @@
             }
         }
 
-        @include for_breakpoint(mobile) {
+        @include for_breakpoint(mobile tablet) {
             flex-direction: column;
             text-align: center;
             padding: 0;

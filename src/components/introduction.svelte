@@ -13,7 +13,6 @@
         <h2>Greetings,</h2>
         <h1>my name is <span id="name">Sora</span>.</h1>
     </span>
-    <br>
     <p>I'm a freelance developer and a content creator.</p>
     <span id="social">
         {#each social as links}
@@ -23,6 +22,8 @@
 </div>
 
 <style lang="scss">
+    $anim: cubic-bezier(0.075, 0.82, 0.165, 1);
+
     div#intro {
         display: flex;
         flex-direction: column;
@@ -45,12 +46,22 @@
         @include for_breakpoint(mobile) {
             p { text-align: center; }
         }
+
+        @for $i from 1 through 3 {
+            & > *:nth-child(#{$i}) {
+                animation: slideIn #{$i / 2}s #{$anim};
+            }
+        }
     }
-    
+
+    @keyframes slideIn {
+        from { transform: translateX(420px); }
+        to   { transform: translateX(0px); }
+    }
 
     h1 {
         font-size: 3.2em;
-        margin-top: -42px;
+        margin-top: -30px;
     }
 
     #social {

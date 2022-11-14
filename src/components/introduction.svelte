@@ -49,7 +49,7 @@
 
         @for $i from 1 through 3 {
             & > *:nth-child(#{$i}) {
-                animation: slideIn #{$i / 2}s #{$anim};
+                animation: slideIn #{calc($i / 2)}s #{$anim};
             }
         }
     }

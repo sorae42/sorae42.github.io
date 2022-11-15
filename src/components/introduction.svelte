@@ -3,7 +3,7 @@
         {href: "https://twitter.com/astr3me_dayo", icon: "twitter"},
         {href: "https://ko-fi.com/shigukk", icon: "coffee"},
         {href: "https://www.youtube.com/channel/UCITM2whX5c-88KPL56ndUlw", icon: "youtube-play"},
-        {href: "https://github.com/skyventuree", icon: "github"},
+        {href: "https://github.com/sorae42", icon: "github"},
         {href: "mailto:bonniefoxy2009@gmail.com", icon: "envelope"},
     ]
 </script>

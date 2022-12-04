@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- I will port this page to Svelte when I migrate my portfolio to SvelteKit. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Sora's MC Instances</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1><span id="name">Sora</span>'s Minecraft Instances</h1>
+        <p>for MultiMC, PolyMC and multiple instances supported launchers.</p>
+        <p>This page has been redesigned so tech-illteracy people can also follow this guide to setup and play Minecraft in no time.</p>
+        <p>If you like the straightforward progress, go to the <a href="bver.html">basic version</a> (NOT UP-TO-DATE!).</p>
+        <p>All the files here are downloaded from trusted sources (<a href="https://modrinth.com/">Modrinth</a> and <a href="https://www.curseforge.com/">CurseForge</a>) and carefully tested for viruses.</p>
+        <p>If you are the owner of any of these resources and do not want me to distribute along with the instance files, please open an <a href="https://github.com/sorae42/sorae42.github.io/issues">issue</a> or <a href="mailto:bonniefoxy2009@gmail.com">shoot me an email.</a></p>
+        <br>
+        <p>Carefully follow each step to make sure the operation goes smoothly.</p>
+        <p>Make sure to open links in a new tab so you won't lost this page!</p>
+    </div>
+    <hr>
+
+    <div id="table-content">
+        <h2><i class="fa fa-list-ol"></i> Table of Content</h2>
+        <ol>
+            <li><a href="#java">Download Java</a></li>
+            <li>
+                <a href="#launcher">Launcher</a>
+                <ol>
+                    <li><a href="#launcher">Download</a></li>
+                    <li><a href="#launcher-steps">Setup</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#instance">Instance</a>
+                <ol>
+                    <li><a href="#instance">Download</a></li>
+                    <li><a href="#instance-steps">Import to Launcher</a></li>
+                </ol>
+            </li>
+            <li><a href="#credits">Credits</a></li>
+            <li><a href="#troubleshoot">Troubleshooting</a></li>
+        </ol>
+        <hr>
+    </div>
+
+    <div id="java">
+        <h2><i class="fa fa-coffee"></i> Download Java</h2>
+        <p><strong>You must have Java <span id="java-ver"></span> in order to play Minecraft <span id="mc-ver"></span>!</strong></p>
+        <p>If you haven't, you need to download Java in order to play Minecraft Java Edition. All you need to do is click the link below to start downloading.</p>
+        <p id="linux-warn" class="hidden">Okay, I'm just kidding. You will need to navigate down in order to find the installer. If you use Linux, I'm pretty sure you know what to do.</p>
+        <p><a id="java-dl-link"></a></p>
+        <div id="appleSilicon" class="dialog">
+            <h3>Java for the Apple Silicon</h3>
+            <p>Find out what kind of Macintosh computer you are using by going to <i class="fa fa-apple"></i> > "About this Mac".</p>
+            <div id="as-img">
+                <img src="assets/osx-about-old.png" alt="about-old">
+                <img src="assets/osx-about-new.png" alt="about-new">
+            </div>
+            <p>If you have a Mac equipped with an Apple Silicon chip (e.g. M1, M1 Max, etc.), you should download this instead.</p>
+            <p><a id="as-link"></a></p>
+        </div>
+        <p>After that, run the installer and install Java.</p>
+        <p>By downloading and installing Azul OpenJDK, you agree to their <a href="https://www.azul.com/products/core/openjdk-terms-of-use/">Terms of Use</a>.</p>
+        <br><hr>
+    </div>
+    
+    <div id="launcher">
+        <h2><i class="fa fa-rocket"></i> Download Launcher</h2>
+        <p>You will need a special kind of launcher... a Minecraft launcher where you can have a lot of Minecraft versions and none of them can conflict with each other.</p>
+        <p>These launchers does not have Java bundled by default, so make sure you do the steps in the <a href="#java">Download Java</a> section!</p>
+        <span id="premium">
+            <p>I recommend you to use the new Prism Launcher, which can be found here: <a href="https://prismlauncher.org/download">prismlauncher.org</a>.</p>
+            <p>Alternatively, you can use these too:</p>
+            <ul>
+                <li><a href="https://polymc.org/">polymc.org</a></li>
+                <li><a href="https://multimc.org/">multimc.org</a></li>
+            </ul>
+        </span>
+        <span id="cracked" class="hidden">
+            <p>You happens to not owning a bought Minecraft account, so you will need to grab this launcher instead.</p>
+            <p><a href="https://nightly.link/UltimMC/Launcher/workflows/main/develop">https://nightly.link/UltimMC/Launcher/workflows/main/develop</a></p>
+            <p>For Windows user: If the "mmc-cracked-win32" doesn't work, try downloading the "mmc-cracked-win32-5152". I'm not sure what 5152 means.</p>
+        </span>
+        <p>Terminology: win (Windows), osx (macOS), lin (Linux)</p>
+    </div>
+    <div id="launcher-steps">
+        <h2><i class="fa fa-wrench"></i> Setup</h2>
+        <p>While this screenshot here shows the interface of macOS, this still apply to Windows and Linux.</p>
+        <p><strong>Step 1:</strong> Select your language.</p>
+        <img src="assets/s1.png" alt="Step 1">
+        <p><strong>Step 2:</strong> Select the installed Java version.</p>
+        <p>Also set "Maximum memory allocation" to 1/2 of your computer RAM. (e.g. if you computer has 8 GB of RAM, set it to 4096 MiB aka 4 GB)</p>
+        <img src="assets/s2.png" alt="Step 2">
+        <p><strong>Step 3:</strong> Disable Analytics if asked and needed.</p>
+        <p><strong>Step 4:</strong> Click "Profile" on the top right, then "Manage Account".</p>
+        <img src="assets/s3.jpeg" alt="Step 4">
+        <p><strong>Step 5:</strong> Click the respectively button to add your account.</p>
+        <img src="assets/s4.jpeg" alt="Step 5">
+        <p><strong>Step 6:</strong> Log into your account and you should be all set!</p>
+        <br><hr>
+    </div>
+
+    <div id="instance">
+        <h2><i class="fa fa-gamepad"></i> Download Instance</h2>
+        <p>This is the part you have been waiting for.</p>
+        <p>Minecraft Instances mentioned here has a lot of quality of life mods pre-installed. Plus some resource packs to make it prettier! (See <a href="#credits">Credits</a> for attribution).</p>
+        <div class="dialog">
+            <h2 id="ver-title"></h2>
+            <p><span id="ver-mods"></span> included. <span id="ver-size"></span> in size.</p>
+            <a id="ver-link"><button>Download</button></a>
+        </div>
+    </div>
+    <p>Made a wrong decision? <a href="index.html">Click here</a> to go back.</p>
+    <div id="instance-steps">
+        <h2><i class="fa fa-download"></i> Import to Launcher</h2>
+        <p><strong>Step 1:</strong> Click the download button above to start downloading.</p>
+        <img src="assets/s5.jpeg" alt="Step 1">
+        <p><strong>Step 2:</strong> Drag and drop the downloaded file to the launcher window.</p>
+        <video src="assets/d1.mp4" autoplay muted loop></video>
+        <p><i>If the video doesn't play, you might have autoplay disabled.</i></p>
+        <p><strong>Step 3:</strong> Click OK to add it to the launcher.</p>
+        <p><strong>(OPTIONAL)</strong> Give it a name to differentiate between instances (in case you might want to add more in the future).</p>
+        <img src="assets/s6.png" alt="Step 3">
+        <p><strong>Step 4:</strong> Select the instance and click "Launch" to start the game!</p>
+        <img src="assets/s7.png" alt="Step 4">
+        <br><hr>
+    </div>
+
+    <div id="credits">
+        <h2><i class="fa fa-copyright"></i> Credits</h2>
+        <h3>Resources Pack</h3>
+        <ul>
+            <li><a href="https://mizunomcmemo.blogspot.com">Mizuno's 16 Craft</a></li>
+            <li><a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/resource-packs/2627963-touhou-project-yukkuri-pack">Touhou Yukkuri Pack</a> (ported to 1.19.2)</li>
+            <li><a href="http://shibayan.info/stal1301/">Toho Bossa Nova 2 Music Disc</a></li>
+            <li><a href="https://www.curseforge.com/minecraft/texture-packs/slightly-improved-font">Slightly Improved Font (32x)</a></li>
+        </ul>
+        <h3>Shaders</h3>
+        <ul>
+            <li><a href="https://sildurs-shaders.github.io">Sildur's Shaders</a></li>
+            <li><a href="https://www.bslshaders.com">BSL Shaders</a></li>
+        </ul>
+        <p>There are too much mods included that I unfortunately couldn't include them here.</p>
+        <br><hr>
+    </div>
+
+    <div id="troubleshoot">
+        <h2><i class="fa fa-wrench"></i> Troubleshooting</h2>
+        <p>Make sure you have carefully followed the step above before reading this section!</p>
+        <div class="dialog">
+            <h3>Table of contents</h3>
+            <ol>
+                <li><a href="#issue-1">I can't launch the game due to "<code>This instance is not compatible with Java version XX.</code>"</a></li>
+                <li><a href="#issue-2">I can't launch any game after I migrated from another multiple instances launcher. (ManyMC and Flatpak users)</a></li>
+            </ol>
+        </div>
+        <div id="issue-1">
+            <p><strong>Issue:</strong> I can't launch the game due to "<code>This instance is not compatible with Java version XX.</code>"</p>
+            <p><strong>Resolve:</strong> You must select the correct Java version for the instance. Follow these step:</p>
+            <p><strong>Step 1:</strong> Right click on the instance and choose "Edit Instance". "Console window" will be opened if haven't already.</p>
+            <img src="assets/s8.jpeg" alt="Step 1">
+            <p><strong>Step 2:</strong> Go to Settings, and click on Auto-Detect.</p>
+            <img src="assets/s9.png" alt="Step 2">
+            <p><strong>Step 3:</strong> Click "Refresh" to refresh installed Java version, select the correct version and click OK.</p>
+            <img src="assets/s10.jpeg" alt="Step 3">
+            <p><strong>Step 4:</strong> Close the window and launch the game as normal.</p>
+        </div>
+        <br>
+        <div id="issue-2">
+            <p><strong>Issue:</strong> I can't launch any game after I migrated from another multiple instances launcher. (ManyMC and Flatpak users)</p>
+            <p><strong>Resolve:</strong> Follow the step described in these link:</p>
+            <ul>
+                <li>For Apple Silicon ManyMC users: <a href="https://github.com/PrismLauncher/PrismLauncher/issues/162">github.com/PrismLauncher/PrismLauncher/issues/162</a></li>
+                <li>For Linux Flatpak users: <a href="https://github.com/PrismLauncher/PrismLauncher/issues/163">github.com/PrismLauncher/PrismLauncher/issues/163</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let url = window.location.href.split('?');
+        let query = new URLSearchParams(url[1]);
+
+        const os = query.get("os");
+        const ver = query.get("ver");
+        const premium = query.get("premium");
+
+        // Check if the parameter exists
+        if (query.get("type") == "Troubleshoot my game!") {
+            ["table-content", "java", "launcher", "instance", "credits"].forEach(e => {
+                document.getElementById(e).classList.add("hidden");
+                window.location.href = "#troubleshoot";
+            });
+        }
+        else if (!os || !ver || !premium) window.location.href = "index.html";
+
+        let platform = (ver > 18) ? "m" : "l";
+
+        document.getElementById("java-ver").innerText = (platform=="m") ? "17" : "8";
+        document.getElementById("mc-ver").innerText = "1." + ver;
+        if (os=="linux") document.getElementById("linux-warn").classList.remove("hidden");
+
+        const osn = {"win": 0, "osx": 1, "linux": 3};
+
+        let java = {
+            "m": [ // modern (java 17)
+                "https://cdn.azul.com/zulu/bin/zulu17.36.17-ca-jdk17.0.4.1-win_x64.msi",
+                "https://cdn.azul.com/zulu/bin/zulu17.36.17-ca-jdk17.0.4.1-macosx_x64.dmg",
+                "https://cdn.azul.com/zulu/bin/zulu17.36.17-ca-jdk17.0.4.1-macosx_aarch64.dmg",
+                "https://www.azul.com/downloads/?version=java-17-lts&os=linux&architecture=x86-64-bit&package=jre"
+            ],
+            "l": [ // legacy (java 8)
+                "https://cdn.azul.com/zulu/bin/zulu8.64.0.19-ca-jdk8.0.345-win_x64.msi",
+                "https://cdn.azul.com/zulu/bin/zulu8.64.0.19-ca-jdk8.0.345-macosx_x64.dmg",
+                "https://cdn.azul.com/zulu/bin/zulu8.64.0.19-ca-jdk8.0.345-macosx_aarch64.dmg",
+                "https://www.azul.com/downloads/?version=java-8-lts&os=linux&architecture=x86-64-bit&package=jre"
+            ]
+        }
+
+        let vers = {
+            "19.2": ["TouhouCraft - 176 mods", "455.95 MB", "https://www.dropbox.com/s/dmwbn333r6d5hzt/1.19.2.zip?dl=1"],
+            "12.2": ["Made for playing on 2b2t or equavalent anachy servers - 8 mods", "14.79 MB", "https://www.dropbox.com/s/0cv64j53orpldnd/1.12.2.zip?dl=1"],
+            "8.9": ["13 mods", "46.26 MB", "https://www.dropbox.com/s/qp1mgb1eydzlkt7/1.8.9.zip?dl=1"],
+            "2.5": ["2 mods + OptiFine", "47.53 MB", "https://www.dropbox.com/s/cywtqmdgj3q5uby/1.2.5.zip?dl=1"]
+        }
+
+        // Java downloads 
+        document.getElementById("java-dl-link").innerText = java[platform][osn[os]];
+        document.getElementById("java-dl-link").href = java[platform][osn[os]];
+
+        if (os!=="osx") document.getElementById("appleSilicon").classList.add("hidden");
+        document.getElementById("as-link").innerText = java[platform][2];
+        document.getElementById("as-link").href = java[platform][2];
+        
+        // Launcher downloads
+        if (premium=="no") {
+            document.getElementById("premium").classList.add("hidden");
+            document.getElementById("cracked").classList.remove("hidden");
+        }
+
+        // Instance downloads
+        const v = vers[ver];
+        document.getElementById("ver-title").innerText = "1." + ver;
+        document.getElementById("ver-mods").innerText = v[0];
+        document.getElementById("ver-size").innerText = v[1];
+        document.getElementById("ver-link").href = v[2];
+    </script>
+</body>
+</html>

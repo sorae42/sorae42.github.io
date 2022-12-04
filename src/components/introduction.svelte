@@ -38,9 +38,7 @@
         }
 
         h1 > span#name {
-            background: linear-gradient(to right, #9939FF, #5151FF);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #416ddf;
         }
 
         @include for_breakpoint(mobile) {

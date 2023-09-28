@@ -2,39 +2,35 @@
     <img src="../../assets/p5cc-card.jpeg" alt="P5CC card sample" />
     <div class="content">
         <h3>~ Featured Project ~</h3>
-        <h1>Persona 5 Calling Card Maker</h1>
+        <h2>Persona 5 Calling Card Maker</h2>
         <p>
             For the sake of effortlessly making a calling card.
             <br />Sending your card to the darkest desire.
         </p>
         <span class="link">
             <a href="https://skyventuree.github.io/p5cc"
-                ><button>Visit site<i class="fa fa-external-link" /></button></a
-            >
-            <a href="https://github.com/skyventuree/p5cc"
-                ><button><i class="fa fa-github" />Source code</button></a
+                ><button>Make yours now!</button></a
             >
         </span>
+        <br /><br />
+        <span>PERSONA 5 © ATLUS</span>
     </div>
 </div>
 
 <style lang="scss">
-    h1,
-    p {
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    div#p5cc{
+    div#p5cc {
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
         justify-content: space-between;
 
         font-family: "KoreanKRSM", sans-serif;
         background-color: red;
         background-image: url("../../assets/p5cc-bg.png");
         background-position: center;
-        padding: 50px 0 50px 0;
+        padding: 4em;
+
+        border-radius: 10px;
 
         color: white;
         text-shadow: 2px 2px black;
@@ -49,27 +45,21 @@
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         img {
             transform: rotateX(42deg) rotateY(-10deg) rotateZ(20deg);
-            filter: drop-shadow(2px 30px 10px rgb(174, 45, 45));
-            object-fit: contain;
-            padding-right: 5%;
+            filter: drop-shadow(12px 24px 6px rgb(118, 31, 31));
+            padding-right: 42px;
+            width: 42%;
+            height: 42%;
         }
 
         button {
             font-family: inherit;
             font-size: inherit;
 
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 20px;
-            padding-right: 20px;
-
-            background-color: #fff;
             border: 2px solid #000;
             border-radius: 0;
             box-shadow: 4px 4px #000;
@@ -82,7 +72,7 @@
             }
         }
 
-        @include for_breakpoint(mobile) {
+        @include for_breakpoint(mobile tablet) {
             flex-direction: column;
             align-items: center;
 

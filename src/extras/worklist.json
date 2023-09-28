@@ -1,36 +1,22 @@
 {
     "otherWorks": [
         {
-            "name": "Touhou Yukkuri Minecraft mod (BETA)",
-            "description": "[A proper featured banner will be made soon] Take it Easy in Minecraft!",
+            "name": "Touhou Yukkuri in Minecraft",
+            "description": "Take it Easy in Minecraft! Adding the Yukkuris into your Minecraft world. ",
             "links": [
                 {
                     "type": "download",
                     "link": "https://modrinth.com/mod/yukkuri"
-                },
-                {
-                    "type": "source",
-                    "link": "https://github.com/sorae42/yukkuri-mod"
                 }
             ]
         },
         {
-            "name": "Simply Gensokyo",
-            "description": "A Stepmania theme based on Simply Love, with Touhou visual included.",
+            "name": "YouOkay",
+            "description": "Let people know that you are doing fine today, even when you are away from social media.",
             "links": [
                 {
-                    "type": "source",
-                    "link": "https://github.com/sorae42/Simply-Gensokyo"
-                }
-            ]
-        },
-        {
-            "name": "Altelier Shop",
-            "description": "Shop for rhythm gamers. Now closed.",
-            "links": [
-                {
-                    "type": "source",
-                    "link": "https://github.com/JinPots/alter6k-pre-order"
+                    "type": "visit",
+                    "link": "https://youokay.vercel.app/"
                 }
             ]
         },
@@ -40,13 +26,7 @@
             "links": [
                 {
                     "type": "download",
-                    "link": "https://github.com/skyventuree/bms-radio/releases",
-                    "icon": ""
-                },
-                {
-                    "type": "source",
-                    "link": "https://github.com/skyventuree/bms-radio/",
-                    "icon": "github"
+                    "link": "https://github.com/sorae42/bms-radio/releases"
                 }
             ]
         },
@@ -56,26 +36,27 @@
             "links": [
                 {
                     "type": "download",
-                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder/releases",
-                    "icon": "arrow-circle-down"
-                },
-                {
-                    "type": "source",
-                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder"
+                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder/releases"
                 }
             ]
         },
         {
-            "name": "TomakoSMP",
-            "description": "A small website I made for my own Minecraft SMP server.",
+            "name": "PingTest",
+            "description": "A simple and lightweight URL ping tester for your local network.",
             "links": [
                 {
-                    "type": "link",
-                    "link": "https://skyventuree.github.io/tomakosmp/"
-                },
+                    "type": "visit",
+                    "link": "https://sorae42.github.io/pingtest"
+                }
+            ]
+        },
+        {
+            "name": "Minecraft Instances",
+            "description": "A collections of vanilla Minecraft modpacks for better performance and quality of life.",
+            "links": [
                 {
-                    "type": "source",
-                    "link": "https://github.com/skyventuree/tomakosmp/"
+                    "type": "visit",
+                    "link": "https://sorae42.github.io/mc-instances/"
                 }
             ]
         }

@@ -1,6 +1,6 @@
 <script>
     import { otherWorks } from "../extras/worklist.json";
-    import F_p5cc from "./featured-works/p5cc.svelte";
+    import F_p5cc from "./featured.svelte";
 
     const linkType = {
         download: ["arrow-circle-down", "Download"],
@@ -8,6 +8,7 @@
     };
 </script>
 
+<!-- svelte-ignore a11y-missing-attribute -->
 <div id="works">
     <F_p5cc />
     <br />
@@ -15,7 +16,15 @@
         {#each otherWorks as project}
             <div class="content">
                 <div class="details">
-                    <h2>{project.name}</h2>
+                    <h2>
+                        {#if project.icon !== ""}
+                            <img
+                                src="/src/assets/icons/{project.icon}"
+                                class="app-icon"
+                            />
+                        {/if}
+                        {project.name}
+                    </h2>
                     <p>{project.description}</p>
                 </div>
                 <span class="link">
@@ -98,6 +107,11 @@
 
             h2 {
                 margin-bottom: 0;
+
+                img {
+                    width: 1em;
+                    transform: translateY(4px);
+                }
             }
         }
 

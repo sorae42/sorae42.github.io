@@ -5,8 +5,6 @@
     let year = new Date().getFullYear();
 </script>
 
-<br />
-
 <Intro />
 <Works />
 

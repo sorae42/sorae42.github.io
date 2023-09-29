@@ -1,5 +1,5 @@
 <div id="p5cc">
-    <img src="../../assets/p5cc-card.jpeg" alt="P5CC card sample" />
+    <img src="../assets/p5cc-card.jpeg" alt="P5CC card sample" />
     <div class="content">
         <h3>~ Featured Project ~</h3>
         <h2>Persona 5 Calling Card Maker</h2>
@@ -26,7 +26,7 @@
 
         font-family: "KoreanKRSM", sans-serif;
         background-color: red;
-        background-image: url("../../assets/p5cc-bg.png");
+        background-image: url("../assets/p5cc-bg.png");
         background-position: center;
         padding: 4em;
 

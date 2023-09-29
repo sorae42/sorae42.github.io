@@ -18,10 +18,7 @@
                 <div class="details">
                     <h2>
                         {#if project.icon !== ""}
-                            <img
-                                src="/src/assets/icons/{project.icon}"
-                                class="app-icon"
-                            />
+                            <img src="/icons/{project.icon}" class="app-icon" />
                         {/if}
                         {project.name}
                     </h2>

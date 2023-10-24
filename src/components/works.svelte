@@ -35,6 +35,11 @@
                         </a>
                     {/each}
                 </span>
+                {#if project.ribbon !== undefined}
+                    <div class="ribbon">
+                        <strong>{project.ribbon}</strong>
+                    </div>
+                {/if}
             </div>
         {/each}
     </div>
@@ -87,20 +92,29 @@
         }
     }
 
+    div.ribbon {
+        height: 24px;
+        width: 100%;
+        text-align: center;
+        background-color: yellow;
+        border-radius: 0 0 10px 10px;
+        color: black;
+    }
+
     div.content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
-        padding: 0 5%;
-
+        
         background-color: #363636;
-
+        
         div.details {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding: 0 5%;
 
             h2 {
                 margin-bottom: 0;

@@ -9,7 +9,8 @@
                     "type": "download",
                     "link": "https://modrinth.com/mod/yukkuri"
                 }
-            ]
+            ],
+            "ribbon": "Planned for rework."
         },
         {
             "name": "YouOkay",
@@ -20,7 +21,8 @@
                     "type": "visit",
                     "link": "https://youokay.vercel.app/"
                 }
-            ]
+            ],
+            "ribbon": "Reworking currently."
         },
         {
             "name": "BMS Radio Station",
@@ -30,39 +32,6 @@
                 {
                     "type": "download",
                     "link": "https://github.com/sorae42/bms-radio/releases"
-                }
-            ]
-        },
-        {
-            "name": "Facebook 60 FPS Re-encoder",
-            "icon": "",
-            "description": "A tool to re-encode your Facebook video to support 60 FPS uploading.",
-            "links": [
-                {
-                    "type": "download",
-                    "link": "https://github.com/JinPots/Facebook60FPS-Re-Encoder/releases"
-                }
-            ]
-        },
-        {
-            "name": "PingTest",
-            "icon": "",
-            "description": "A simple and lightweight URL ping tester for your local network.",
-            "links": [
-                {
-                    "type": "visit",
-                    "link": "https://sorae42.github.io/pingtest"
-                }
-            ]
-        },
-        {
-            "name": "Minecraft Instances",
-            "icon": "",
-            "description": "A collections of vanilla Minecraft modpacks for better performance and quality of life.",
-            "links": [
-                {
-                    "type": "visit",
-                    "link": "https://sorae42.github.io/mc-instances/"
                 }
             ]
         }

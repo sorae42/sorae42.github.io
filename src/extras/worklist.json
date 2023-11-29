@@ -9,20 +9,7 @@
                     "type": "download",
                     "link": "https://modrinth.com/mod/yukkuri"
                 }
-            ],
-            "ribbon": "Planned for rework."
-        },
-        {
-            "name": "YouOkay",
-            "icon": "you-ok.svg",
-            "description": "Let people know that you are doing fine today, even when you are away from social media.",
-            "links": [
-                {
-                    "type": "visit",
-                    "link": "https://youokay.vercel.app/"
-                }
-            ],
-            "ribbon": "Reworking currently."
+            ]
         },
         {
             "name": "BMS Radio Station",

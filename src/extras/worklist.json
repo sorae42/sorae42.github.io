@@ -1,17 +1,6 @@
 {
     "otherWorks": [
         {
-            "name": "Touhou Yukkuri in Minecraft",
-            "icon": "",
-            "description": "Take it Easy in Minecraft! Adding the Yukkuris into your Minecraft world. ",
-            "links": [
-                {
-                    "type": "download",
-                    "link": "https://modrinth.com/mod/yukkuri"
-                }
-            ]
-        },
-        {
             "name": "BMS Radio Station",
             "icon": "bms-app.png",
             "description": "Discover and listen to a collection of BMS music.",

@@ -1,15 +1,14 @@
 <div id="p5cc">
     <img src="../assets/p5cc-card.jpeg" alt="P5CC card sample" />
     <div class="content">
-        <h3>~ Featured Project ~</h3>
         <h2>Persona 5 Calling Card Maker</h2>
         <p>
             For the sake of effortlessly making a calling card.
             <br />Sending your card to the darkest desire.
         </p>
         <span class="link">
-            <a href="https://skyventuree.github.io/p5cc"
-                ><button>Make yours now!</button></a
+            <a href="https://skyventuree.github.io/p5cc" class="button"
+                >Make yours now!</a
             >
         </span>
         <br /><br />
@@ -56,16 +55,17 @@
             height: 42%;
         }
 
-        button {
+        .button {
             font-family: inherit;
             font-size: inherit;
-
             border: 2px solid #000;
             border-radius: 0;
             box-shadow: 4px 4px #000;
-            color: #000;
+            color: black;
+            background-color: white;
             padding: 10px;
             outline: 0;
+            text-shadow: none;
 
             &:hover {
                 filter: invert(1);

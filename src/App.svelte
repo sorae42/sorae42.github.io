@@ -5,7 +5,7 @@
     let year = new Date().getFullYear();
 </script>
 
-<Intro />
+<Intro /> <!-- This is a header but I'm too lazy to change the name, lol.-->
 <Works />
 
 <div id="copyright">
